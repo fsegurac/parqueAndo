@@ -2,13 +2,14 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
 */
-.contenedor{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #efefef;
+.navbar-nav a:hover {
+    background-color: #04AA6D;;
 }
-.tarjetas {
+/*----------------------------------*/
+.col{
+    padding: 30px;
+}
+.card{
     position: relative;
     width: 300px;
     height: 400px;
@@ -16,20 +17,21 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     border-radius: 5px;
     overflow: hidden;
     border-radius: 20px;
-    margin: 15px 20px ;
-    
+    margin: 15px 20px 
 }
-.tarjetas .head{
+
+.card .head{
     height: 125px;
     width: 100%;
     position: relative;
     transition: .5s;
+
 }
-.tarjetas:hover {
+.card:hover {
     box-shadow: 0 5px 15px blue;
     transform: translateY(-15px);
 }
-.tarjetas .head .imagen {
+.card .head .image{
     width: 150px;
     height: 150px;
     position: absolute;
@@ -39,52 +41,25 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     bottom: -30%;
     left: 50%;
     transform: translate(-50%);
-}
 
-.tarjetas .head .imagen img {
+}
+.card .head .image img{
     width: 100%;
     height: 100%;
     border-radius: 50%;
 }
-
-.tarjetas .descripcion {
+.card .card-body{
     height: 200px;
     padding: 40px 20px 20px 20px;
-    border-bottom: solid 1px blue;
     text-align: center;
-   
 }
-.tarjetas .descripcion h3 {
-    color: #05383a;
-}
-
-.tarjetas .descripcion h4 {
-    color: #1c5a5c;
-}
-
-.tarjetas .descripcion p {
+.card .card-body p {
     margin-top: 20px;
     font-size: 15px;
-   
-}
 
-.tarjetas .contacto {
-    width: 100%;
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
-.tarjetas .contacto a {
-    text-decoration: none;
-    color: #fff;
-    background: #157579;
-    padding: 5px 20px;
-    border-radius: 5px;
+.card .card-body h5{
+    margin-top: 20px;
+    font-size: 20px;
 }
-
-.tarjetas .contacto a:hover {
-  
-    background: green;
-  
-}
+/*----------------------------------*/
