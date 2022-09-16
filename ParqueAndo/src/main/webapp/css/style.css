@@ -1,16 +1,30 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
-*/
+body{
+    background-image:  url(../img/foto_de_fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.row{
+    background-image: url(../img/foto_de_fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
 .navbar-nav a:hover {
     background-color: #04AA6D;;
 }
+
 /*----------------------------------*/
+/*-------------Tarjetas-------*/
 .col{
     padding: 30px;
 }
 .card{
     position: relative;
+    padding: px; ;
     width: 300px;
     height: 400px;
     background: #fff;
@@ -25,6 +39,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     width: 100%;
     position: relative;
     transition: .5s;
+    
 
 }
 .card:hover {
@@ -63,3 +78,38 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     font-size: 20px;
 }
 /*----------------------------------*/
+/*--------------Calcular tarifa--------*/
+
+
+.container {
+
+    padding: 20px 10px ;
+    background:white;
+    border-radius: 40px;
+}
+.container h1{
+    text-align: center;
+}
+
+.opcion_menu{
+    align-items: center;
+}
+
+
+  h2{
+    text-align: center;
+  }
+
+.menu-content .moto{
+    text-align: center;
+}
+.menu-content p:hover {
+    color: #cda45e;
+  }
+  /*----------------------------------*/
+/*--------------Finde tarifa tarifa--------*/
+
+hr {
+    background-color:black;
+    
+}
