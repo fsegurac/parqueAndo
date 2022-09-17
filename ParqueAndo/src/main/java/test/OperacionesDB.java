@@ -13,7 +13,7 @@ import java.sql.Statement;
 public class OperacionesDB {
 
     public static void main(String[] args) {
-        listarTabla("parqueadero");
+        listarTabla("usuario");
     }
 
     public static void listarTabla(String nombre_tabla) {

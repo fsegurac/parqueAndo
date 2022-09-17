@@ -58,7 +58,7 @@ input {
 }
 input:focus {
     outline: none;
-    color: rgba(94,93,03);
+    color: rgb(94,93,03);
     
 }
 label {
