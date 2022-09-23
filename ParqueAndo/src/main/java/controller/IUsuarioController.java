@@ -1,13 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package controller;
 
-/**
- *
- * @author usuario
- */
-public class IUsuarioController {
+
+public interface IUsuarioController {
+    public String login(String email_usr, String contrasena_usr);
+        
     
 }
