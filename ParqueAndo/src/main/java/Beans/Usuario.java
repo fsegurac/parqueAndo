@@ -32,6 +32,10 @@ public class Usuario {
         this.estado_usr = estado_usr;
     }
 
+    public Usuario(String email_usr, String contrasena_usr, String nombre, String apellido, double cel_usr, String placa, String marca, String color, double dinero_disp, boolean estado_usr, int id) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     public int getId() {
         return id;
     }
