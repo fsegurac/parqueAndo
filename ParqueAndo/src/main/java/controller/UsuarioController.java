@@ -27,10 +27,7 @@ public class UsuarioController implements IUsuarioController {
                 String color = rs.getString("color");
                 double dinero_disp = rs.getDouble("dinero_disp");
                 boolean estado_usr = rs.getBoolean("estado_usr");
-                
-                boolean premium = rs.getBoolean("premium");
-                Usuario usuario;
-                usuario = new Usuario(email_usr, contrasena_usr, nombre, apellido, cel_usr, placa, marca, color,dinero_disp, estado_usr, id);
+                Usuario usuario = new Usuario(email_usr,contrasena_usr,id, nombre, apellido, cel_usr, placa, marca, color, dinero_disp, estado_usr);               
                 return gson.toJson(usuario);
             }
         } catch (Exception ex) {
