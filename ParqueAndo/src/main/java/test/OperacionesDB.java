@@ -40,7 +40,7 @@ public class OperacionesDB {
                         String contrasena_usr = rs.getString("contrasena_usr");
                         boolean estado_usr = rs.getBoolean("estado_usr");
 
-                        Usuario usuarios = new Usuario(email_usr,contrasena_usr,id, nombre, apellido, cel_usr,  placa, marca, color, dinero_disp,  estado_usr);
+                        Usuario usuarios = new Usuario(id, nombre, apellido, cel_usr, email_usr, placa, marca, color, dinero_disp, contrasena_usr, estado_usr);
                         System.out.println(usuarios.toString());
                     }
                     break;
