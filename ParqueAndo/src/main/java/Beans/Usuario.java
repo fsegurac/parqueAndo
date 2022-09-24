@@ -18,7 +18,7 @@ public class Usuario {
     private String contrasena_usr;
     private boolean estado_usr;
 
-    public Usuario(String email_usr,String contrasena_usr,int id, String nombre, String apellido, double cel_usr,  String placa, String marca, String color, double dinero_disp,  boolean estado_usr) {
+    public Usuario(int id, String nombre, String apellido, double cel_usr, String email_usr, String placa, String marca, String color, double dinero_disp, String contrasena_usr, boolean estado_usr) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
