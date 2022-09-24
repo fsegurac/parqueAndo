@@ -17,23 +17,23 @@ $(document).ready(function () {
 
 function autenticarUsuario() {
 
-    let username = $("#email").val();
-    let contrasena = $("#contrasena").val();
+    let email_usr = $("#email").val();
+    let contrasena_usr = $("#contrasena").val();
 
     $.ajax({
         type: "GET",
         dataType: "html",
         url: "./ServletUsuarioLogin",
         data: $.param({
-            username: email_usr,
-            contrasena: contrasena_usr
+            email_usr: email_usr,
+            contrasena_usr: contrasena_usr
         }),
         success: function (result) {
             let parsedResult = JSON.parse(result);
             if (parsedResult != false) {
                 $("#login-error").addClass("d-none");
-                let username = parsedResult['username'];
-                document.location.href = "home.html?username=" + username;
+                let email_usr= parsedResult['email_usr'];
+                document.location.href = "home.html?username=" + email_usr;
             } else {
                 $("#login-error").removeClass("d-none");
             }
