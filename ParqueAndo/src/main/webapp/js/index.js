@@ -42,10 +42,11 @@ function autenticarUsuario() {
 }
 function registrarUsuario() {
     
-    
+    let id= $("#id").val();
     let nombre = $("#nombre").val();
     let apellido = $("#apellido").val();
     let email_usr = $("#email").val();
+    let cel_usr = $("#cel_usr").val();
     let contrasena_usr = $("#contrasena").val();
     let contrasenaConfirmacion = $("#input-contrasena-repeat").val();
     
@@ -53,23 +54,19 @@ function registrarUsuario() {
    
     
 
-    if (contrasena_usr === contrasenaConfirmacion) {
+    if (contrasena_usr == contrasenaConfirmacion) {
 
         $.ajax({
             type: "GET",
             dataType: "html",
             url: "./ServletUsuarioRegister",
             data: $.param({
-                
-                
+                id: id,
                 nombre: nombre,
                 apellido: apellido,
                 email_usr: email_usr,
-                contrasena_usr: contrasena_usr
-
-                
-               
-                
+                cel_usr: cel_usr,
+                contrasena_usr: contrasena_usr              
             }),
             success: function (result) {
                 let parsedResult = JSON.parse(result);

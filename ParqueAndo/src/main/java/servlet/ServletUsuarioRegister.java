@@ -1,4 +1,4 @@
-package sevlet;
+package servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -44,7 +44,7 @@ public class ServletUsuarioRegister extends HttpServlet {
         String placa = request.getParameter("placa");
         String marca = request.getParameter("marca");
         String color = request.getParameter("color");
-        double dinero_disp = Double.parseDouble(request.getParameter("dinero_disp"));
+        double dinero_disp = 0.0;
         String contrasena_usr = request.getParameter("contrasena_usr");
         boolean estado_usr = Boolean.parseBoolean(request.getParameter("estado_usr"));
         
