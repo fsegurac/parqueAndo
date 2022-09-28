@@ -4,51 +4,83 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-.row{
-    background-image: url(../img/foto_de_fondo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
-}
-
 button{
     border-radius: 10px;
-}
-    
-/*--------formulario---------*/
-.container{
-    font-family: 'ROBOTO';
-    width: 100%;
-    height: 650px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
 }
 
 .navbar-nav a:hover {
     background-color: #04AA6D;;
 }
 
-h1 {
+    
+/*--------Contenedor---------*/
+.container{
+    font-family: 'ROBOTO';
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+/*main {
+    padding: 1rem ;
+    border-radius: 5%;
+    background-image:  url(Recursos/foto_de_fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffff;
+  
+  }*/
+  
+
+
+ .container h1 {
+  
     text-align: center;
-    font-weight: 700;
+    color: white;
+
 }
+.container h1:hover {
+  
+    text-align: center;
+    color: white;
+    box-shadow: 0 5px 15px blue;
+    transform: translateY(-3px);
+
+}
+
+
+/*--------formulario---------*/
 form {
+    padding: 5px;
     background: white;
-    padding: 40px 0;
-    box-shadow: 0 0 6px 0 rgba(255,255,255, 0.8);
+    box-shadow: 0 0 6px 0 rgba(236, 16, 16, 0.8);
     border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 800px;
+    margin-top: 2.8rem;
+    margin-right: auto;
+    margin-left: auto;
+ 
 }
-.form {
-    width: 100%;
-    margin: auto;
+form:hover {
+    box-shadow: 0 5px 15px blue;
+    transform: translateY(-14px);
 }
-form .grupo {
+
+form .campo {
     position: relative;
-    margin: 45px;
-}
+    margin: 15px;
+ 
+  }
+
+
 input {
     background: none;
     color: gray;
@@ -117,7 +149,25 @@ button {
     font-size: 16px;
     cursor: pointer;
     font-family: 'roboto';
-    background: #DAE2F8;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #D6A4A4, #DAE2F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #e63946;  /* fallback for old browsers */
 }
+button:hover {
+    box-shadow: 0 5px 15px blue;
+    transform: translateY(-3px);
+}
+
+ form a{
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 0px auto;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+
+ }
+
+
+
