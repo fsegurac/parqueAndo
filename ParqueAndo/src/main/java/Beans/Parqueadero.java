@@ -11,11 +11,11 @@ public class Parqueadero {
     private String direccion_parq;
     private double cel_parq;
     private String email_parq;
-    private int dinero_ganado;
+    private double dinero_ganado;
     private String constrasena_parq;
     private boolean estado_parq;
 
-    public Parqueadero(int id_NIT, String razon_social, String direccion_parq, double cel_parq, String email_parq, int dinero_ganado, String constrasena_parq, boolean estado_parq) {
+    public Parqueadero(int id_NIT, String razon_social, String direccion_parq, double cel_parq, String email_parq, double dinero_ganado, String constrasena_parq, boolean estado_parq) {
         this.id_NIT = id_NIT;
         this.razon_social = razon_social;
         this.direccion_parq = direccion_parq;
@@ -66,11 +66,11 @@ public class Parqueadero {
         this.email_parq = email_parq;
     }
 
-    public int getDinero_ganado() {
+    public double getDinero_ganado() {
         return dinero_ganado;
     }
 
-    public void setDinero_ganado(int dinero_ganado) {
+    public void setDinero_ganado(double dinero_ganado) {
         this.dinero_ganado = dinero_ganado;
     }
 
@@ -92,15 +92,10 @@ public class Parqueadero {
 
     @Override
     public String toString() {
-        return "Parqueadero{" + "id_NIT=" + id_NIT + ", razon_social=" + 
-                razon_social + ", direccion_parq=" + direccion_parq + 
-                ", cel_parq=" + cel_parq + ", email_parq=" + email_parq + 
-                ", dinero_ganado=" + dinero_ganado + ", constrasena_parq=" + 
-                constrasena_parq + ", estado_parq=" + estado_parq + '}';
+        return "Parqueadero{" + "id_NIT=" + id_NIT + ", razon_social=" + razon_social 
+                + ", direccion_parq=" + direccion_parq + ", cel_parq=" + cel_parq + 
+                ", email_parq=" + email_parq + ", dinero_ganado=" + dinero_ganado + 
+                ", constrasena_parq=" + constrasena_parq + ", estado_parq=" + estado_parq + '}';
     }
-
-    
-    
-    
     
 }

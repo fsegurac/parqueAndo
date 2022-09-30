@@ -11,6 +11,18 @@ $(document).ready(function () {
         event.preventDefault();
         registrarUsuario();
     });
+    
+    $("#form-parq").submit(function (event) {
+
+        event.preventDefault();
+        autenticarParqueadero();
+    });
+    
+    $("#form-register-parq").submit(function (event) {
+
+        event.preventDefault();
+        registrarParqueadero();
+    });
 
 
 });
@@ -75,6 +87,73 @@ function registrarUsuario() {
                     $("#register-error").addClass("d-none");
                     let email_usr = parsedResult['email_usr'];
                     document.location.href = "home.html?username=" + email_usr;
+                } else {
+                    $("#register-error").removeClass("d-none");
+                    $("#register-error").html("Error en el registro del usuario");
+                }
+            }
+        });
+    } else {
+        $("#register-error").removeClass("d-none");
+        $("#register-error").html("Las contraseñas no coinciden");
+    }
+}
+function autenticarParqueadero() {
+
+    let email_Parq = $("#email").val();
+    let contrasena_Parq = $("#contrasena").val();
+
+    $.ajax({
+        type: "GET",
+        dataType: "html",
+        url: "./ServletParqueaderoLogin",
+        data: $.param({
+            email_Parq: email_Parq,
+            contrasena_Parq: contrasena_Parq
+        }),
+        success: function (result) {
+            let parsedResult = JSON.parse(result);
+            if (parsedResult !== false) {
+                $("#login-error").addClass("d-none");
+                let email_Parq= parsedResult['email_Parq'];
+                document.location.href = "home.html?username=" + email_Parq;
+            } else {
+                $("#login-error").removeClass("d-none");
+            }
+        }
+    });
+}
+function registrarParqueadero() {
+    
+    let id_NIT= $("#id_NIT").val();
+    let razon_Social = $("#razon_social").val();
+    let direccion_Parq= $("#direccion").val();
+    let cel_Parq = $("#cel").val();
+    let email_Parq = $("#email").val();
+    let contrasena_Parq = $("#contrasena").val();
+    let contrasenaConfirmacion = $("#input-contrasena-repeat").val(); 
+
+    if (contrasena_Parq == contrasenaConfirmacion) {
+
+        $.ajax({
+            type: "GET",
+            dataType: "html",
+            url: "./ServletParqueaderoRegister",
+            data: $.param({
+                id_NIT: id_NIT,
+                razon_Social: razon_Social,
+                direccion_parq: direccion_Parq,
+                email_Parq: email_Parq,
+                cel_Parq: cel_Parq,
+                contrasena_Parq: contrasena_Parq              
+            }),
+            success: function (result) {
+                let parsedResult = JSON.parse(result);
+
+                if (parsedResult !== false) {
+                    $("#register-error").addClass("d-none");
+                   let email_Parq = parsedResult['email_parq'];
+                    document.location.href = "home.html?username=" + email_Parq;
                 } else {
                     $("#register-error").removeClass("d-none");
                     $("#register-error").html("Error en el registro del usuario");
