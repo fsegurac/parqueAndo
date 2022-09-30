@@ -115,7 +115,7 @@ function autenticarParqueadero() {
             let parsedResult = JSON.parse(result);
             if (parsedResult !== false) {
                 $("#login-error").addClass("d-none");
-                let email_Parq= parsedResult['email_Parq'];
+                let email_Parq= parsedResult['email_parq'];
                 document.location.href = "home.html?username=" + email_Parq;
             } else {
                 $("#login-error").removeClass("d-none");
@@ -142,7 +142,7 @@ function registrarParqueadero() {
             data: $.param({
                 id_NIT: id_NIT,
                 razon_Social: razon_Social,
-                direccion_parq: direccion_Parq,
+                direccion_Parq: direccion_Parq,
                 email_Parq: email_Parq,
                 cel_Parq: cel_Parq,
                 contrasena_Parq: contrasena_Parq              
