@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/pagina_reserva.css">
+        <script src="https://kit.fontawesome.com/7d0c405e7b.js" crossorigin></script>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+            />
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"
+
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"
+        ></script>
+
+
+
+        <title>Reserva</title>
+    </head>
+    <body>
+        <div class="wrapper">
+
+            <!--Barra de navegacion lateral-->
+            <div class="sidebar">
+                <h2>ParqueAndo</h2>
+                <ul>
+                    <li><a href="pagina_usuario.html"><i class="fas fa-home"></i>Informacion General</a></li>
+                    <li><a href="editar_cuenta.html"><i class="fas fa-user"></i>Editar mi cuenta</a></li>
+                    <li><a href="pagina_reserva.html"><i class="fas fa-address-card"></i>Relizar una reserva</a></li>
+                </ul> 
+                <div class="red">
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-right-from-bracket"></i>Salir</a>
+                </div>
+            </div>
+            <!--Fin del Barra de navegasion lateral-->   
+
+
+            <div class="main_content">
+                <div class="header">Realizar una reserva.</div> 
+                <h1 style="text-align: center; color: #ffffff; padding: 4%;" >Tipo de vehiculo</h1>
+
+                <div class="division">
+
+                    <div class="row mx-5 bg-white">
+
+                        <!--Trajeta 1-->
+                        <div class="col">
+                            <div class="card" style="width: 18rem">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="https://cdn.icon-icons.com/icons2/2387/PNG/512/car_vehicle_transport_icon_144665.png" alt="..." />
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Carro</h5>
+                                    <p class="card-text">Hacer reserva</p>
+                                    <a href="formulario_carro.html" class="btn btn-primary">Hacer reserva</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Trajeta 2-->
+                        <div class="col">
+                            <div class="card" style="width: 18rem">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="https://cdn.icon-icons.com/icons2/2836/PNG/512/motorcycle_moto_icon_180227.png" alt="..." />
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Moto</h5>
+                                    <p class="card-text">Registrarme como persona natural.</p>
+                                    <a href="/registro-persona.html" class="btn btn-primary">Hacer reserva</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Trajeta 3-->
+                        <div class="col">
+                            <div class="card" style="width: 18rem">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="https://cdn.icon-icons.com/icons2/2836/PNG/512/bicycle_bike_icon_180257.png" alt="..." />
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Bicicleta</h5>
+                                    <p class="card-text">Registrarme como una entidad.</p>
+                                    <a href="#" class="btn btn-primary">Hacer reserva</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr /> <!--Tarjetas Fin-->
+
+                </div>
+                <div class="container">
+
+                    <div class="cardm">
+                        <div class="left-column background1-left-column">
+                            <h6>Tarifa estandar</h6>
+                            <h2>----</h2>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+
+                        <div class="right-column">
+                            <div>
+                                <h4>Dias de funcinamiento</h4>
+                                <h6>Lunes - Viernes</h6>
+
+                            </div>
+                            <h2>Por un mes</h2>
+                            <p>Lorem ipsum dolor sit amet, </p>
+                        </div>
+                    </div>
+
+                    <div class="cardm">
+                        <div class="left-column background2-left-column">
+                            <h6>Tarifa premiun</h6>
+                            <h2>-----</h2>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="right-column">
+                            <div>
+                                <h4>Dia de funcionamiento</h4>
+                                <h6>Lunes - Domingo</h6>
+                            </div>
+                            <h2>Por un mes</h2>
+                            <p>La tarifa premiun corresposnde</p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </body>
+</html>
