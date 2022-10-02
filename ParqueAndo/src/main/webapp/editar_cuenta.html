@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/7d0c405e7b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/editar_cuenta.css">
+
+ 
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <!--Barra de navegacion lateral-->
+        <div class="sidebar">
+            <h2>ParqueAndo</h2>
+            <ul>
+                    <li><a href="pagina_usuario.html"><i class="fas fa-home"></i>Informacion General</a></li>
+                    <li><a href="editar_cuenta.html"><i class="fas fa-user"></i>Editar mi cuenta</a></li>
+                    <li><a href="pagina_reserva.html"><i class="fas fa-address-card"></i>Relizar una reserva</a></li>
+
+            </ul> 
+            <div class="salir">
+               <a href="#"><i class="fa-sharp fa-solid fa-arrow-right-from-bracket"></i>Salir</a>
+    <!--
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>-->
+          </div>
+        </div>
+     <!--Fin del Barra de navegasion lateral-->   
+    
+        <div class="main_content">
+            <div class="header">Realizar una reserva.</div> 
+            <main>
+       
+              <section id="sectionForm">
+                  <h1>Editar mis datos</h1>
+                  <form >
+                      <input id="inNombre" type="text" placeholder="Nombre">
+                      <input id="inApellido" type="text" placeholder="Apellido">
+                      <input id="inCelular" type="number" placeholder="Celular">
+                      <input id="inStatus" type="number" placeholder="Status">
+      
+                      <button id="btnAddUpdate">Modificar</button>
+                  </form>
+              </section>
+              <br>
+              <br>
+              <section id="sectionTable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Celular</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyProducts">
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+    
+    
+                    </tbody>
+                    
+                </table>
+            </section>
+          </main>
+
+
+
+        </div>
+    
+    </div>
+    <script src="model/dato.js"></script>
+    <script src="controllers/datos.js"></script>
+    <script src="index.js"></script>
+   
+
+
+
+</body>
+</html>
