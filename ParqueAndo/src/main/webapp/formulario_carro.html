@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/formulario_carro.css">
+        <script src="https://kit.fontawesome.com/7d0c405e7b.js" crossorigin="anonymous"></script>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+            />
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"
+
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"
+        ></script>
+
+
+
+        <title>Usuario</title>
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <!--Barra de navegacion lateral-->
+            <div class="sidebar">
+                <h2>ParqueAndo</h2>
+                <ul>
+                    <li><a href="pagina_usuario.html"><i class="fas fa-home"></i>Informacion General</a></li>
+                    <li><a href="editar_cuenta.html"><i class="fas fa-user"></i>Editar mi cuenta</a></li>
+                    <li><a href="pagina_reserva.html"><i class="fas fa-address-card"></i>Relizar una reserva</a></li>
+
+
+                </ul> 
+                <div class="salir">
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-right-from-bracket"></i>Salir</a>
+
+                </div>
+            </div>
+            <!--Fin del Barra de navegasion lateral-->   
+
+
+            <div class="main_content">
+                <div class="header">Realizar una reserva.</div> 
+                <main>
+                    <h1>Formulario  de reserva</h1>
+                    <form>
+                        <div class='field'>
+                            <h4>Dtos del vehiculo</h4>
+                            <label for="">Tipo de vehiculo</label>
+                            <select id="seleccion" class="estilo">
+                                <option id="blanco"></option>
+                                <option id="opcion1">Carro</option>
+                            </select>
+                            <label for="">Marca del vehiculo</label>
+                            <select id="seleccion" class="estilo">
+                                <option id="blanco"></option>
+                                <option id="opcion1">Rojo</option>
+                                <option id="opcion2">Opcion 2</option>
+                                <option id="opcion3">Opcion 3</option>
+                            </select>
+                            <label for="">Color del vehiculo</label>
+                            <select id="seleccion" class="estilo">
+                                <option id="blanco"></option>
+                                <option id="opcion1">Rojo</option>
+                                <option id="opcion2">Blanco</option>
+                                <option id="opcion3">Negro</option>
+                                <option id="opcion3">Plata</option>
+                                <option id="opcion3">Marron</option>
+                                <option id="opcion3">Verde</option>
+                                <option id="opcion3">Amarillo</option>
+                                <option id="opcion3">Otro</option>
+                            </select>
+                            <label for="">Numero de placa</label>
+                            <input type="text" >
+                        </div>
+                        <div class='field'>
+                            <h5>Fecha y hora de entrada</h5>
+                            <label for="">Entrada</label>
+                            <input type="datetime-local" id="Test_DatetimeLocal" >
+                            <label for="">Salida</label>
+                            <input type="datetime-local" id="Test_DatetimeLocal">
+
+                            <h5 style="text-align: center; padding: 8px;">Elegir parqueadero</h5>
+
+                            <select id="seleccion" class="estilo">
+                                <option id="blanco"></option>
+                                <option id="opcion1">Parquedero1</option>
+                                <option id="opcion2">Parquedero2</option>
+                                <option id="opcion3">Parquedero3</option>
+                            </select>
+
+                        </div>
+                        <div class='field'>
+                            <h5>Informacion del dueño</h5>
+                            <label for="">Numero de documento</label>
+                            <input type="number" >
+                            <label for="">Numero de celular</label>
+                            <input type="text" >
+
+
+
+                        </div>
+
+                        <div class='textBox'>
+                            <label>Otros datos</label>
+                            <textarea></textarea>
+                        </div>
+                        <div class='gustos'>
+                            <label>¿Quieres recibir información
+                                relacionada a a las oferctas de los parquedero?</label>
+                            <div><input name='gustos' type='radio' />Sí</div>
+                            <div><input name='gustos' type='radio' />No</div>
+                        </div>
+                        <div class='submit'>
+                            <button>
+                                Enviar
+                            </button>
+                        </div>
+                    </form>
+                    <hr>
+
+
+
+                    <!--Tarjetas de tarifas-->
+                    <h1 >Tarifas de carro</h1>
+                    <div class="container">
+                        <div class="cardm">
+                            <div class="left-column background1-left-column">
+                                <h6>Tarifa de un hora</h6>
+                                <h2>----</h2>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+
+                            <div class="right-column">
+                                <div>
+                                    <h4>Dias de funcinamiento</h4>
+                                    <h6>Lunes - Viernes</h6>
+
+                                </div>
+                                <h2>$ 3.000</h2>
+                                <p></p>
+                            </div>
+
+                        </div>
+
+                        <div class="cardm">
+                            <div class="left-column background2-left-column">
+                                <h6>Tarifa de un dia</h6>
+                                <h2>-----</h2>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="right-column">
+                                <div>
+                                    <h4>Dia de funcionamiento</h4>
+                                    <h6>Lunes - Viernes</h6>
+                                </div>
+                                <h2>$ 20.000</h2>
+                                <p>La tarifa premiun corresposnde</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="container">
+
+                        <div class="cardm">
+                            <div class="left-column background1-left-column">
+                                <h6>Tarifa de un hora</h6>
+                                <h2>----</h2>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+
+                            <div class="right-column">
+                                <div>
+                                    <h4>Dias de funcinamiento</h4>
+                                    <h6>Lunes - Viernes</h6>
+
+                                </div>
+                                <h2>$ 3.000</h2>
+                                <p></p>
+                            </div>
+
+                        </div>
+
+                        <div class="cardm">
+                            <div class="left-column background2-left-column">
+                                <h6>Tarifa de un dia</h6>
+                                <h2>-----</h2>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="right-column">
+                                <div>
+                                    <h4>Dia de funcionamiento</h4>
+                                    <h6>Lunes - Viernes</h6>
+                                </div>
+                                <h2>$ 20.000</h2>
+                                <p>La tarifa premiun corresposnde</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </main>
+            </div>
+
+        </div>
+
+
+
+
+    </body>
+</html>
