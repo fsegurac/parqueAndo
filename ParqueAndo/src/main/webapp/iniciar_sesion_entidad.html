@@ -24,10 +24,10 @@
             integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
             crossorigin="anonymous"
         ></script>
+
         <link rel="icon" href="img/aparcamiento.png" />
-        <link rel="stylesheet" href="css/iniciar_sesion.css" />
-        
-        
+        <link rel="stylesheet" href="css/iniciar_sesion_entidad.css" />
+       
     </head>
     <body>
         <!--Encabezado-->
@@ -43,49 +43,50 @@
                             <a class="nav-link active" aria-current="page" href="#"
                                >Contacto</a
                             >
-                            <a class="nav-link active" aria-current="page" href="nosotros.html"
-                               >Nosotros</a
+                            <a class="nav-link active" aria-current="page" href="#"
+                               >Nosotro</a
                             >
                             <a
                                 class="nav-link active"
                                 aria-current="page"
-                                href="iniciar_sesion.html"
-                                >Iniciar sesion</a
+                                href="iniciar_sesion_entidad.html"
+                                >Inicio sesion</a
                             >
                         </div>
                     </div>
                 </div>
             </nav>
         </div>
+        <!--Inicio del formulario-->
         <div class="container">
             <div class="row">
-
-                <form action="" method="post" id="form-parq">
+                <form action="" method="post" id="form">
                     <div class="form">
-                        <h1>Iniciar sesion</h1>
+                        <h1>Iniciar sesion </h1>
+                        <h1>como entidad</h1>
                         <div class="grupo">
-                            <input type="email" name=" " id="email" required />
+                            <input type="email" name=" " id="name" required />
                             <span class="barra"></span>
                             <label for="">Email</label>
                         </div>
                         <div class="grupo">
-                            <input type="password" name=" " id="contrasena" required />
+                            <input type="password" name=" " id="name" required />
                             <span class="barra"></span>
-                            <label for="">Contraseña</label>
+                            <label for="">Password</label>
                         </div>
-                        <button type="submit" >Iniciar</button>
+                        <button type="submit ">Enviar</button>
                         <hr />
-                        <a class="nav-link active text-center" aria-current="page" href="index.html">No tengo una cuenta</a>
-
+                        <a
+                            class="nav-link active text-center"
+                            aria-current="page"
+                            href="registro_entidad.html"
+                            >No tengo una cuenta</a
+                        >
                     </div>
-                <!--Mensaje de error al ingresar credenciales incorrectas-->
-                <div id="login-error" class="alert alert-danger d-none" role="alert">Email o contraseña incorrectos</div>
+                    <div id="login-error" class="alert alert-danger d-none" role="alert">Email o contraseña incorrectos</div>
                 </form>
-                 
             </div>
-            
         </div>
-
         <br />
         <!-- =======  fin de formulario ======= -->
 
@@ -93,7 +94,7 @@
         <div class="container-fluid">
             <div
                 class="row p-5 pb-2 bg-dark text-white"
-                style="background-image: url(https://images.unsplash.com/photo-1618022325802-7e5e732d97a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=448&q=80);";>
+                style="background-image: url(https://images.unsplash.com/photo-1618022325802-7e5e732d97a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=448&q=80);">
                 <div class="col-xs12 col-md-6 col-lg-3">
                     <p class="h3">ParqueAndo</p>
                     <p class="text-secondary">Colombia.</p>
@@ -102,7 +103,7 @@
                     <p class="h5 mb-3">Link</p>
                     <div class="mb-2">
                         <a class="text-secondary text-decoration-none" href=""
-                           >Terminos y condiciones</a
+                           >Termino y condiciones</a
                         >
                     </div>
                     <div class="mb-2">
@@ -114,7 +115,7 @@
                 <div class="col-xs12 col-md-6 col-lg-3">
                     <p class="h5">Empresa</p>
                     <div class="mb-2">
-                        <a class="text-secondary text-decoration-none" href="nosotros.html"
+                        <a class="text-secondary text-decoration-none" href=""
                            >Sobre nosotros</a
                         >
                     </div>
