@@ -1,11 +1,11 @@
 body{
-    background-image: url(/Recursos/foto_de_fondo.jpg);
+    background-image: url(../img/foto_de_fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 .row{
-    background-image: url(/Recursos/foto_de_fondo.jpg);
+    background-image: url(../img/foto_de_fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
